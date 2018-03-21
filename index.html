@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="response.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="flickity.min.css">
+    <link rel="stylesheet" href="hslider.css">
     <title>Urban Racing Parts</title>
 </head>
 
@@ -194,6 +195,45 @@
         </div>
     </section>
     <section class="six-screen">
+        <div class="hsldr-container">
+
+            <figure>
+                <img src="img/car.jpg" />
+            </figure>
+            <figure>
+                <img src="img/keys.jpg" />
+                <figcaption>Ice surfing</figcaption>
+            </figure>
+            <figure>
+                <img src="img/motor.jpg" />
+                <figcaption>Golden hair</figcaption>
+            </figure>
+            <figure>
+                <img src="img/car.jpg" />
+                <figcaption>Girl with the balloon</figcaption>
+            </figure>
+            <figure>
+                <img src="img/keys.jpg" />
+                <figcaption>Ice surfing</figcaption>
+            </figure>
+            <figure>
+                <img src="img/motor.jpg" />
+                <figcaption>Golden hair</figcaption>
+            </figure>
+            <figure>
+                <img src="img/car.jpg" />
+                <figcaption>Girl with the balloon</figcaption>
+            </figure>
+            <figure>
+                <img src="img/keys.jpg" />
+                <figcaption>Ice surfing</figcaption>
+            </figure>
+            <figure>
+                <img src="img/motor.jpg" />
+                <figcaption>Golden hair</figcaption>
+            </figure>
+        
+        </div>
     </section>
     <section class="seventh-screen">
         <h3>мы ремонтируем турбины:</h3>
@@ -319,14 +359,28 @@
     </footer>
 
 
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/0279959ac4.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.hslider.js"></script>
+    
+    <script type="text/javascript">       
+        $( document ).ready(function() { 
+            $( ".hsldr-container" ).hslider({
+              navBar: true,
+              auto: true,
+              delay: 4000
+            });
+        });	
+    </script>  
 </body>
 
 </html>
