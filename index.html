@@ -14,29 +14,37 @@
 </head>
 
 <body>
-    <section class="first-screen">
+    <section id="first-screen">
         <article>
             <header>
                 <div class="left">
-                    <img class="logo" src="img/logo1.png">
+                    <div class="logo"></div>
                     <nav>
-                        <a href="№">Главная /</a>
-                        <a href="№">О нас /</a>
-                        <a href="№">Услуги /</a>
-                        <a href="№">Цены /</a>
-                        <a href="№">Для партнеров</a>
+                        <a href="#first-screen">Главная /</a>
+                        <a href="#third-screen">О нас /</a>
+                        <a href="#forth-screen">Услуги /</a>
+                        <a href="#eighth-screen">Цены /</a>
+                        <a href="#nineth-screen">Для партнеров</a>
                     </nav>
+                    <div class="menu"></div>
                 </div>
                 <div class="address">
-                    г.Волгоград, ул.Хорошева, 123А
-                    <br>
+                    <p>г.Волгоград, ул.Хорошева, 123А</p>
                     <p class="orange">+7 (961) 078-28-28</p>
+                </div>
+                <div class="mobile collapse">
+                    <a href="#first-screen">Главная</a>
+                    <a href="#third-screen">О нас</a>
+                    <a href="#forth-screen">Услуги</a>
+                    <a href="#eighth-screen">Цены</a>
+                    <a href="#nineth-screen">Для партнеров</a>
                 </div>
             </header>
             <div class="content">
                 <div class="left-side">
                     <h1>Турбокомпрессоры</h1>
                     <h2>Ремонт и продажа по всей России</h2>
+                    <div class="turbo-response"></div>
                     <p class="form">Мы всегда на связи!</p>
                     <form action="#" method="get">
                         <p>Оставьте ваши контактные
@@ -60,19 +68,18 @@
                     </form>
                 </div>
                 <div class="right-side">
-                    <img class="turbo" src="img/turbo1.png" width="650px" height="493px">
-                    <img class="text-img" src="img/text.png" width="200px" height="50px">
+                    <div class="turbo flipInX wow"></div>
                 </div>
             </div>
-            <a class="scroll" href="#">
+            <a class="scroll wow bounce" data-wow-delay="3s" href="#second-screen">
                 <img src="img/scroll-black.png">
             </a>
         </article>
     </section>
-    <section class="second-screen">
+    <section id="second-screen">
         <article>
             <h3>почему выбирают нас?</h3>
-            <div class="content">
+            <div class="content slideInUp wow">
                 <div class="item">
                     <div class="icon ic1"></div>
                     <p class="sub underlined">Доступность</p>
@@ -94,7 +101,7 @@
                         <br> по турбинам</p>
                 </div>
             </div>
-            <div class="content">
+            <div class="content slideInUp wow" data-wow-delay="0.3s">
                 <div class="item">
                     <div class="icon ic4"></div>
                     <p class="sub underlined">Работа с регионами</p>
@@ -115,20 +122,19 @@
                         <br> и наличному расчету</p>
                 </div>
             </div>
-            <a class="scroll" href="#">
+            <a class="scroll wow bounce" data-wow-delay="1s" href="#third-screen">
                 <img src="img/scroll-white.png">
             </a>
         </article>
-        <div id="triangle-down"></div>
     </section>
-    <section class="third-screen">
+    <section id="third-screen">
         <article>
             <h3>о нас</h3>
-            <div class="el-1">
+            <div class="el-1 fadeInUp wow">
                 about
                 <br> us
             </div>
-            <div class="list">
+            <div class="list fadeInUp wow" data-wow-delay="0.3s">
                 <ul>
                     <li>используем современное оборудование;</li>
                     <li>профессиональные специалисты с опытом
@@ -140,39 +146,39 @@
                         <br> выхода из строя.</li>
                 </ul>
             </div>
-            <img src="img/man.png" class="el-2_img" width="200px" height="200px">
+            <img src="img/man.png" class="el-2_img  zoomIn wow" data-wow-delay="1s" width="200px" height="200px">
         </article>
-        <a class="scroll" href="#">
+        <a class="scroll wow bounce" href="#forth-screen">
             <img src="img/scroll-black.png">
         </a>
     </section>
-    <section class="forth-screen">
+    <section id="forth-screen">
         <h3>услуги</h3>
         <article>
             <p class="prof">Мы профессионально решим Ваши проблемы с турбиной</p>
             <div class="content">
-                <div class="left">
+                <div class="left fadeIn wow">
                     <div class="lens"></div>
                     <p>Продиагностируем</p>
                 </div>
-                <div class="right">
-                    <div class="tools"></div>
+                <div class="right fadeIn wow" data-wow-delay="1s">
+                    <div class="tools" ></div>
                     <p>Восстановим или заменим</p>
                 </div>
             </div>
             <p class="bold">Произведем монтаж / демонтаж турбокомпрессора,
                 <br> адаптацию и калибровку при необходимости</p>
-            <img src="img/quotes.png" class="quotes" width="80px" height="55px">
+            <div class="quotes"></div>
             <div class="forth-text">Новая турбина стоит в 2 раза дороже, чем ремонт Вашей,
                 <br> при этом ресурс отремонтированной турбины не уступает
                 <br> ресурсу нового агрегата ( новой турбины ).</div>
-            <img src="img/tool.png" class="tool" width="400px" height="449px">
+            <div class="tool"></div>
         </article>
-        <a class="scroll" href="#">
+        <a class="scroll wow bounce" href="#fifth-screen">
             <img src="img/scroll-white.png">
         </a>
     </section>
-    <section class="fifth-screen">
+    <section id="fifth-screen">
         <div class="parallax">
             <article>
                 <p class="prof">Мы используем только качественные комплектующие
@@ -189,11 +195,39 @@
                             проходит финишную обкатку на разгонном стенде (100 000 до 300 000 оборотов).</p>
                     </div>
                 </div>
-                <p class="prof fifth-text">
+                <p class="fifth-text">
                     Такой технологический процесс позволяет задать восстановленному турбокомпрессору ресурс его работы до уровня новой турбины.</p>
             </article>
         </div>
     </section>
+    
+    <section class="seventh-screen">
+        <h3>мы ремонтируем турбины:</h3>
+        <article>
+            <div class="content">
+                <div class="auto wow fadeInLeft"></div>
+                <div class="list">
+                    <p class="prof underlined">легковых автомобилей</p>
+                    <p class="seven-text">
+                        Alfa Romeo, Alpina, Audi, BMW, Cadillac, Chevrolet, Chrysler, Citroen,Dodge, Fiat, Ford, Honda, Hyundai, Infiniti, Isuzu,
+                        Jaguar, Jeep, Kia, Land Rover, Mazda, Mini, Mercedes-Benz, Mitsubishi, Nissan,Opel, Peugeot,Porsche,
+                        Renault, Skoda, SsangYong, Subaru, Suzuki, Toyota, Volkswagen, Volvo
+                    </p>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="list-2">
+                    <p class="prof underlined">грузовиков и спецтехники</p>
+                    <p class="seven-text left-align">Iveco, LDV, DAF, MAN, Scania, Neoplan, Case, Caterpillar, CUMMINS, Deutz, DOOSAN, HITACHI, HYUNDAI, CONSTRUCTION,
+                        Isuzu, JCB, John Deere, KOMATSU, Liebherr, LongKing, NEW HOLLAND, PERKINS, Scania, Sisu, SHANTUI,
+                        VOLVO CONSTRUCTION
+                    </p>
+                </div>
+                <div class="track wow fadeInRight"></div>
+            </div>
+        </article>
+    </section>
+
     <section class="six-screen">
         <div class="hsldr-container">
 
@@ -235,36 +269,11 @@
         
         </div>
     </section>
-    <section class="seventh-screen">
-        <h3>мы ремонтируем турбины:</h3>
-        <article>
-            <div class="content">
-                <img class="auto" src="img/auto.png" width="725px" height="300px">
-                <div class="list">
-                    <p class="prof underlined">легковых автомобилей</p>
-                    <p class="seven-text">
-                        Alfa Romeo, Alpina, Audi, BMW, Cadillac, Chevrolet, Chrysler, Citroen,Dodge, Fiat, Ford, Honda, Hyundai, Infiniti, Isuzu,
-                        Jaguar, Jeep, Kia, Land Rover, Mazda, Mini, Mercedes-Benz, Mitsubishi, Nissan,Opel, Peugeot,Porsche,
-                        Renault, Skoda, SsangYong, Subaru, Suzuki, Toyota, Volkswagen, Volvo
-                    </p>
-                </div>
-            </div>
-            <div class="content-2">
-                <div class="list">
-                    <p class="prof underlined">грузовиков и спецтехники</p>
-                    <p class="seven-text left-align">Iveco, LDV, DAF, MAN, Scania, Neoplan, Case, Caterpillar, CUMMINS, Deutz, DOOSAN, HITACHI, HYUNDAI, CONSTRUCTION,
-                        Isuzu, JCB, John Deere, KOMATSU, Liebherr, LongKing, NEW HOLLAND, PERKINS, Scania, Sisu, SHANTUI,
-                        VOLVO CONSTRUCTION
-                    </p>
-                </div>
-                <img class="track" src="img/track.png" width="624px" height="450px">
-            </div>
-        </article>
-    </section>
-    <section class="eighth-screen">
+
+    <section id="eighth-screen">
         <h3>цены</h3>
         <article>
-            <div class="content">
+            <div class="content fadeInUp wow">
                 <div class="item">
                     <p class="sub">Диагностика (дефектовка)
                     </p>
@@ -284,7 +293,7 @@
                     <p class="sub">Полный ремонт турбины</p>
                     <p class="bold">от 5 000 руб.</p>
                 </div>
-                <div class="item" style="border:none">
+                <div class="item item-last" style="border:none">
                     <p class="sub last">Дефектовка</p>
                     <p class="narrow">с заключением о
                         <br> неисправности
@@ -293,10 +302,10 @@
 
                 </div>
             </div>
-            <img src="img/turbo-2.png" class="turbo-2">
+            <div class="turbo-2"></div>
         </article>
     </section>
-    <section class="nineth-screen">
+    <section id="nineth-screen">
         <div class="parallax-2">
             <h3>для партнеров:</h3>
             <div class="wrap">
@@ -311,7 +320,7 @@
     <section class="ten-screen">
         <article>
             <div class="ten-wrap">
-                <div class="form-wrap">
+                <div class="form-wrap wow zoomIn">
                     <p class="form bold">Остались вопросы?</p>
                     <form action="#" method="get">
                         <p>Оставьте ваши контактные
@@ -346,9 +355,11 @@
                 <div class="address">
                     г.Волгоград, ул.Хорошева, 123А
                 </div>
+                
                 <div class="social">
-                    <img src="img/vk.png">
-                    <img src="img/insta.png">
+                    <span class="soc">Мы в соцсетях:</span>
+                    <a href="https://vk.com/urp34"><img src="img/vk.png"></a>
+                    <a href="https://www.instagram.com/urp34/"><img src="img/insta.png"></a>
                 </div>
                 <div class="phone">
                     <img src="img/phone.png">
@@ -371,7 +382,7 @@
     <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/jquery.hslider.js"></script>
-    
+      
     <script type="text/javascript">       
         $( document ).ready(function() { 
             $( ".hsldr-container" ).hslider({

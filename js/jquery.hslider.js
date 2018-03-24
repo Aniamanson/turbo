@@ -128,7 +128,7 @@
 		  	$responsiveHeight = windowWidth/1.7;
 
 		  	if( windowWidth < 600 * 1.7 ) {
-		  		$container.css( 'max-height', ( $responsiveHeight + 30 ) + 'px' );	
+		  		$container.css( 'max-height', ( $responsiveHeight + 20 ) + 'px' );	
 				$allImages.css( 'max-height', $responsiveHeight + 'px' );
 		  	} else {
 		  		$container.css( 'max-height', '630px' );
@@ -139,7 +139,7 @@
 
 			/* Add up image widths to determine the gallery container width */
 			computeCacheImageWidths();
-		  	galleryWidth = 0; 
+		  	galleryWidth = 3; 
 			for( var i = 0; i < $imageWidths.length; i++ ) {
 				galleryWidth += $imageWidths[i];
 			}		  	
