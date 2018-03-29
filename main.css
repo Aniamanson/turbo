@@ -44,7 +44,7 @@ h3 {
 }
 
 #first-screen {
-    height: 100vh;
+    height: 860px;
     background: url(img/backball.png) no-repeat;
     background-size: cover;
 }
@@ -57,7 +57,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
 }
 
 header {
