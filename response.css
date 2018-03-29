@@ -1,3 +1,21 @@
+@media (min-width: 1300px) {
+    
+    #first-screen {
+        height: 860px;
+    }
+
+    #first-screen article {
+        height: 100%;
+        width: 1250px;
+    }
+
+    header {
+        padding-top: 50px;
+    }
+
+
+}
+
 @media screen and (max-width: 1260px) {
     article {
         padding: 0 20px;
@@ -52,8 +70,8 @@
     }
 
     .turbo {
-        width: 500px;
-        height: 379px;
+        width: 550px;
+        height: 417px;
     }
 
     .form {
@@ -158,12 +176,24 @@
         left: 0;
     }
 
+    .seventh-screen .seven-text {
+        text-align: left;
+        padding: 10px 0 10px 20px;
+    }
+
+    .content-2 .seven-text {
+        padding-top: 30px;
+    }
+
+
+
 }
 
 @media screen and (max-width: 950px) {
 
     #first-screen {
-        background: white;
+        background: url(img/bg2.png) no-repeat center; 
+        background-size: cover;
         height: 1000px;
     }
     
@@ -209,7 +239,7 @@
     }
 
     .mobile a:hover {
-        color: #dadbdb;
+        opacity: 0.7;
     }
 
     h1 {
@@ -286,12 +316,507 @@
 
 }
 
+@media screen and (max-width: 800px) {
+
+    #second-screen {
+        height: 1150px;
+    }
+    
+    #second-screen .content {
+        height: 900px;
+        width: 500px;
+
+    }
+
+    .ten-screen {
+        display: block;
+        height: 850px;
+    }
+
+    .ten-screen article {
+        width: 100%;
+        height: 450px;
+        padding: 0;
+    }
+
+    .ten-wrap {
+        height: 450px;
+        text-align: center;
+    }
+
+    .ten-screen .form-wrap {
+        padding-top: 80px;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    footer {
+        height: 135px;
+        flex-wrap: wrap;
+    }
+
+    footer .content {
+        flex-wrap: wrap;
+        width: 350px;
+        height: 100px;
+        margin: 0 auto;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 10px 0 25px 0;
+    }
+
+    .social {
+        order: 4;
+    }
+
+    .soc {
+        display: none;
+    }
+
+
+}
+
 @media screen and (max-width: 750px) {
+    
+    .el-1 {
+        font-size: 100px;
+        margin-bottom: -45px;
+    }
+
+    #third-screen article {
+        height: 800px;
+    }
+
+
+    #third-screen h3 {
+        margin-bottom: 15px;
+    }
+
+    #third-screen .list {
+        width: auto;
+        padding: 35px 30px 30px 30px;
+        height: auto;
+    }
+
+    #third-screen ul {
+        padding: 0 0 0 25px;
+    }
+
+    #third-screen .el-2_img {
+        margin-top: 0;
+    }
+
+    #forth-screen {
+        height: 740px;
+    }
+    
+    #forth-screen article {
+        height: 470px;
+    }
+
+    #forth-screen br {
+        display: none;
+    }
+
+    #forth-screen .content {
+        flex-wrap: wrap;
+        width: 275px;
+        height: 130px;
+        margin: 0 auto;
+
+    }
+
+    #forth-screen .right {
+        margin: 0 auto;
+    }
+
+    #forth-screen .bold {
+        max-width: 530px;
+        margin: 0 auto;
+    }
+
+    .forth-text {
+        width: auto;
+    }
+
+    #fifth-screen .content {
+        width: 320px;
+        height: 380px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    #fifth-screen,  #fifth-screen article, .parallax {
+        height: 850px;
+    }
+
+    .fifth-text {
+        padding: 0 0 35px 0;
+    }
+
+    #fifth-screen .left, .right {
+        text-align: left;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    
+    .seventh-screen article {
+        height: 1050px;
+    }
+
+    .auto {
+        width: 320px;
+        height: 132px;
+    }
+   
+    .track {
+        width: 320px;
+        height: 231px;
+        margin-top: 30px;
+    }
+
+    .seventh-screen .prof {
+        font-size: 16px;
+        background-size: 55% 2px; 
+    }
+
+    .seventh-screen .prof::after {
+        display: none;
+    }
+
+    .seventh-screen .content, .content-2 {
+        width: auto;
+        height: auto; 
+    }
+
+    .seventh-screen .content-2 {
+        height: auto; 
+    }
+
+    .content-2 .list-2 {
+        position: relative;
+        height: auto;
+    }
+
+    .seventh-screen .list, .list-2 {
+        max-width: 400px;
+        height: 100%;
+    }
+
+    .seventh-screen .seven-text {
+        padding: 20px 0 10px 20px;
+        font-size: 16px;
+        width: auto;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 560px) {
+
+    #first-screen {
+        height: 950px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .el-1 {
+        font-size: 70px;
+        margin-bottom: -20px;
+    }
+
+
+    #third-screen {
+        height: auto;
+    }
+
+    #third-screen h3 {
+        margin-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    #third-screen article {
+        height: auto;
+    }
+
+    #third-screen .list {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #third-screen br {
+        display: none;
+    }
+
+    #third-screen ul {
+        width: auto;
+        
+    }
+
+    #third-screen li {
+        font-size: 14px;
+    }
+
+    #forth-screen {
+        height: auto;
+    }
+
+    #forth-screen article {
+        height: 500px;
+    }
+
+    #fifth-screen, #fifth-screen article, .parallax {
+        height: auto;
+    }
+
+    #fifth-screen br {
+        display: none;
+    }
+
+    #fifth-screen .prof {
+        font-size: 18px;
+        padding: 50px 0 50px 0;
+    }
+
+    #fifth-screen .content {
+        max-width: 320px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    .fifth-text {
+        width: auto;
+    }
+
+    #fifth-screen .left {
+        margin-bottom: 20px;
+    }
+
+    #eighth-screen article {
+        height: auto;
+    }
+
+    #eighth-screen .content {
+        height: auto;
+        flex-direction: column;
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    #eighth-screen .item {
+        margin-bottom: 40px;
+    }
+    
+    .turbo-2 {
+        width: 280px;
+        height: 111px;
+    }
+
+    #nineth-screen {
+        height: auto;
+    }
+
+    .parallax-2 {
+        height: auto;
+    }
+
+    #nineth-screen .wrap {
+        height: auto;
+        width: 270px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    #nineth-screen ul {
+        height: auto;
+        width: auto;
+    }
+
+    #nineth-screen li {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    h3 {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+
+    .seventh-screen article {
+        height: auto;
+    }
+
+    .seventh-screen .content, .content-2 {
+        margin-bottom: 30px;
+    }
+    
+    .seventh-screen .list {
+        width: auto;
+        height: 100%;
+    }
+
+    .content-2 .list-2 {
+        width: auto;
+        height: 100%;
+    }
+
+
+    #second-screen {
+        height: 1900px;
+    }
+
+    #second-screen .content {
+        width: 250px;
+        height: 1660px;
+    }
+
+    #second-screen h3 {
+        padding-top: 50px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    #first-screen {
+        height: 950px;
+    }
+
+    #first-screen article {
+        width: 300px;
+        padding: 0 10px;
+    }
+
+    header {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #first-screen .address {
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 19px;
+        width: 290px;
+        align-self: center;
+        padding-right: 0;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .turbo-response {
+        background-size: cover;
+        width: 290px;
+        height: 220px;
+    }
+        
+    #first-screen p {
+        font-size: 14px;
+    }
+
+    .orange {
+        font-weight: 400;
+    }
+
+    .mobile a {
+        font-size: 14px;
+    }
+
+    #first-screen .form {
+        font-size: 20px;
+    }
+
+    #forth-screen article {
+        height: 550px;
+    }
+
+    #forth-screen .bold {
+        font-size: 14px;
+    }
+
     
 }
 
 
+@media screen and (max-width: 415px) {
+    
+    #fifth-screen .content {
+        width: auto;
+    }
 
-@media screen and (max-width: 650px) {
+    footer {
+        height: 170px;
+    }
+
+    footer .content {
+        width: 280px;
+        height: 130px;
+    }
+
+    footer .address {
+        margin-top: 10px;
+    }
 
 }
+
+@media screen and (max-width: 380px) {
+    
+    #forth-screen article {
+        height: 640px;
+    }
+
+    #fifth-screen .content {
+        padding: 20px 15px 20px 15px;
+        text-align: center;
+    }
+
+    #fifth-screen .left, #fifth-screen .right {
+        text-align: center;
+    }
+
+    .seventh-screen h3 {
+        width: 350px;
+    }
+
+    .auto {
+        width: 280px;
+        height: 116px;
+    }
+
+    .track {
+        width: 280px;
+        height: 202px;
+    }
+
+    .seven-text {
+        padding-left: 10px;
+    }
+
+}
+

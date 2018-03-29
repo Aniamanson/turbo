@@ -211,7 +211,9 @@ input {
 #second-screen .content {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 750px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 #second-screen p {
@@ -220,7 +222,7 @@ input {
 }
 
 
-.item {
+#second-screen  .item {
     width: 250px;
     height: 250px;
     color: white;
@@ -572,6 +574,7 @@ li {
 
 .left-align {
     text-align: left;
+    padding-top: 30px;
 }
 
 #eighth-screen {
@@ -598,27 +601,20 @@ li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
     border-right: white 2px solid;
-    margin-right: 20px;
-
 }
 
 #eighth-screen .sub {
     padding-bottom: 0;
     color: #282219;
     font-weight: bold;
-    
-}
-
-#eighth-screen .underlined {
-    display: none;
+    text-align: center;
 }
 
 #eighth-screen .bold {
-    margin: 0;
+    margin: 0 auto;
     font-size: 20px;
-    
+    color: white;
 }
 
 .back {
@@ -744,12 +740,18 @@ footer .address {
     margin-right: 15px;
 }
 
+footer a {
+    color: white;
+}
+
 .phone {
     width: 165px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
+
 
 
 
