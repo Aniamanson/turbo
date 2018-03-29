@@ -65,6 +65,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 30px;
+    z-index: 1;
 }
 
 .left {
@@ -177,6 +178,7 @@ input {
     background-size: cover;
     width: 650px;
     height: 493px;
+    z-index: 2;
 }
 
 .scroll {
