@@ -236,7 +236,7 @@
 		var makeCentral = function() {	
 
 			// all previous images total width	
-			console.log('calling makeCentral');
+			//console.log('calling makeCentral');
 			var prevImgWidth = 0;	
 			for( var i = 0; i < $activeIndex; i++ ) {
 				prevImgWidth += $imageWidths[i];

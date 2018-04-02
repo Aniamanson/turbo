@@ -36,14 +36,8 @@ $(document).ready(function () {
       $("div.mobile").attr("class","mobile collapse");
     }
   }
-  
 
-
-$('form').submit(function (e) {
-  e.preventDefault();
-});
-
-function sendMail(){
+window.sendMail = function(){
   var data = { "name": $("#name").val(), "tel":$("#tel").val() };
   $.ajax({
     type: "POST",

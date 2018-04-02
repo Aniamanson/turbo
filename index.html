@@ -49,19 +49,18 @@
                     <form onsubmit="return false;">
                         <p>Оставьте ваши контактные
                             <br> данные и мы перезвоним вам
-                            <br> в течение 5 минут</p>
+                            <br> в течение 5 минут
+                        </p>
                         <p>
                             <label for="name">
-                                <input type="text" id="name" value=" Имя" onfocus="if (this.value == ' Имя') 
-                                {this.value = '';}" onblur="if (this.value == '') 
-                                {this.value = ' Имя';}">
+                                <input type="text" id="name" placeholder="Имя">
+                            </label>
                         </p>
-                        </label>
                         <p>
                             <label for="tel">
                                 <input type="text" id="tel" class="tel" placeholder="Телефон">
+                            </label>
                         </p>
-                        </label>
                         <p>
                             <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail(); return false;">
                         </p>
@@ -332,24 +331,23 @@
             <div class="ten-wrap">
                 <div class="form-wrap wow zoomIn">
                     <p class="form bold">Остались вопросы?</p>
-                    <form>
+                    <form onsubmit="return false;">
                         <p>Оставьте ваши контактные
                             <br> данные и мы перезвоним вам
-                            <br> в течение 5 минут</p>
+                            <br> в течение 5 минут
+                        </p>
                         <p>
                             <label for="name">
-                                <input type="text" id="name" value=" Имя" onfocus="if (this.value == ' Имя') 
-                                            {this.value = '';}" onblur="if (this.value == '') 
-                                            {this.value = ' Имя';}">
+                                <input type="text" id="name" placeholder="Имя">
+                            </label>
                         </p>
-                        </label>
                         <p>
                             <label for="tel">
-                                <input type="text" class="tel" placeholder="Телефон">
+                                <input type="text" id="tel" class="tel" placeholder="Телефон">
+                            </label>
                         </p>
-                        </label>
                         <p>
-                            <input type="submit" value="Перезвоните мне" class="button" onclick="SendMail()">
+                            <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail(); return false;">
                         </p>
                     </form>
                 </div>
