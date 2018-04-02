@@ -43,8 +43,16 @@ window.sendMail = function(){
     type: "POST",
     url: "send_mail.php",
     data: data,
-    success: function(){ console.log('send ok') },
-    fail: function(){ console.log('error') }
+    success: function(e){ 
+      var resp = JSON.parse(e);
+      if(!resp.errmsg){
+        console.log(resp.message) 
+      } 
+      else {
+        console.log("ошибка")
+      }
+    },
+    fail: function(err){ console.log('error: '+ err) }
   });
   return false;
 }

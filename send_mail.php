@@ -22,6 +22,12 @@ $message = '
     </html> 
 ';
 
-echo $message;
-//mail($to, $subject, $message, $headers);
+if($name && $tel){
+    $response = [
+        "message" => $message,
+        "errmsg" => false
+    ];
+    echo json_encode($response);
+    //mail($to, $subject, $message, $headers);
+}
 ?>
