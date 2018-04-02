@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="flickity.min.css">
     <link rel="stylesheet" href="hslider.css">
+    <link rel="stylesheet" href="vex.css" />
+    <link rel="stylesheet" href="vex-theme-os.css" />
     <title>Urban Racing Parts</title>
 </head>
 
@@ -63,7 +65,7 @@
                             </label>
                         </p>
                         <p>
-                            <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail(); return false;">
+                            <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail('up'); return false;">
                         </p>
                     </form>
                 </div>
@@ -340,16 +342,16 @@
                         <p class="errmsg" style="color:red; display:none">Данные введены неверно</p>
                         <p>
                             <label for="name">
-                                <input type="text" id="name" placeholder="Имя">
+                                <input type="text" id="name2" placeholder="Имя">
                             </label>
                         </p>
                         <p>
                             <label for="tel">
-                                <input type="text" id="tel" class="tel" placeholder="Телефон">
+                                <input type="text" id="tel2" class="tel" placeholder="Телефон">
                             </label>
                         </p>
                         <p>
-                            <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail(); return false;">
+                            <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail('down'); return false;">
                         </p>
                     </form>
                 </div>
@@ -378,12 +380,7 @@
             </div>
         </article>
     </footer>
-
-    <div id="dialog" title="Basic dialog">
-        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-    </div>
        
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/fontawesome.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
@@ -392,6 +389,8 @@
     <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/jquery.hslider.js"></script>
+    <script src="js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os'</script>
     <script src="js/main.js"></script>
 
 </body>

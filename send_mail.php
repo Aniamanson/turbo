@@ -1,4 +1,3 @@
-
 <?php
 $name = htmlspecialchars($_POST['name']);
 $tel = htmlspecialchars($_POST['tel']);
@@ -6,7 +5,7 @@ $tel = htmlspecialchars($_POST['tel']);
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-//$to = 'UrbanRacingParts@gmail.com, evn88fx64@gmail.com';
+//$to = 'UrbanRacingParts@gmail.com';
 $to = 'evn88fx64@gmail.com';
 $subject = 'Сообщение с сайта [Перезвонить]';
 
@@ -28,7 +27,7 @@ if($name && $tel){
         "errmsg" => false
     ];
 
-    //mail($to, $subject, $message, $headers);
+    mail($to, $subject, $message, $headers);
 }
 else {
     $response = [

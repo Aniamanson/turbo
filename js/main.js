@@ -37,8 +37,13 @@ $(document).ready(function () {
     }
   }
 
-window.sendMail = function(){
-  var data = { "name": $("#name").val(), "tel":$("#tel").val() };
+window.sendMail = function(ch){
+  if(ch === "up"){
+    var data = { "name": $("#name").val(), "tel":$("#tel").val() };
+  }
+  if(ch === "down"){
+    var data = { "name": $("#name2").val(), "tel":$("#tel2").val() };
+  }
   $.ajax({
     type: "POST",
     url: "send_mail.php",
@@ -46,12 +51,16 @@ window.sendMail = function(){
     success: function(e){ 
       var resp = JSON.parse(e);
       if(!resp.errmsg){
+        vex.dialog.alert('Готово! Мы скоро вам перезвоним!')
         $(".errmsg").hide()
-        //console.log(resp.message) 
+        $("#name").val("")
+        $("#name2").val("")
+        $("#tel").val("")
+        $("#tel2").val("")
       } 
       else {
         $(".errmsg").show()
-        console.log("ошибка")
+        vex.dialog.alert('Ошибка ввода, необходимо заполнить все поля!')
       }
     },
     fail: function(err){ console.log('error: '+ err) }
