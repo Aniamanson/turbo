@@ -46,7 +46,7 @@
                     <h2>Ремонт и продажа по всей России</h2>
                     <div class="turbo-response flipInX wow"></div>
                     <p class="form">Мы всегда на связи!</p>
-                    <form action="#" method="get">
+                    <form onsubmit="return false;">
                         <p>Оставьте ваши контактные
                             <br> данные и мы перезвоним вам
                             <br> в течение 5 минут</p>
@@ -59,11 +59,11 @@
                         </label>
                         <p>
                             <label for="tel">
-                                <input type="text" class="tel" placeholder="Телефон">
+                                <input type="text" id="tel" class="tel" placeholder="Телефон">
                         </p>
                         </label>
                         <p>
-                            <input type="submit" value="Перезвоните мне" class="button">
+                            <input type="submit" value="Перезвоните мне" class="button"  onclick="sendMail(); return false;">
                         </p>
                     </form>
                 </div>
@@ -332,7 +332,7 @@
             <div class="ten-wrap">
                 <div class="form-wrap wow zoomIn">
                     <p class="form bold">Остались вопросы?</p>
-                    <form action="#" method="get">
+                    <form>
                         <p>Оставьте ваши контактные
                             <br> данные и мы перезвоним вам
                             <br> в течение 5 минут</p>
@@ -349,7 +349,7 @@
                         </p>
                         </label>
                         <p>
-                            <input type="submit" value="Перезвоните мне" class="button">
+                            <input type="submit" value="Перезвоните мне" class="button" onclick="SendMail()">
                         </p>
                     </form>
                 </div>
@@ -380,11 +380,8 @@
     </footer>
 
 
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/0279959ac4.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/fontawesome.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>

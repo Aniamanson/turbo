@@ -33,8 +33,26 @@ $(document).ready(function () {
   window.onresize = function(){
     // если открыта меню и страничка увеличит ширину то убрать мобильную версию меню
     if(window.innerWidth>950){
-      $("div.mobile").attr("class","mobile collapse")
+      $("div.mobile").attr("class","mobile collapse");
     }
   }
   
+
+
+$('form').submit(function (e) {
+  e.preventDefault();
+});
+
+function sendMail(){
+  var data = { "name": $("#name").val(), "tel":$("#tel").val() };
+  $.ajax({
+    type: "POST",
+    url: "send_mail.php",
+    data: data,
+    success: function(){ console.log('send ok') },
+    fail: function(){ console.log('error') }
+  });
+  return false;
+}
+
 });

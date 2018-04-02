@@ -1,0 +1,27 @@
+
+<?php
+$name = htmlspecialchars($_POST['name']);
+$tel = htmlspecialchars($_POST['tel']);
+
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+//$to = 'UrbanRacingParts@gmail.com, evn88fx64@gmail.com';
+$to = 'evn88fx64@gmail.com';
+$subject = 'Сообщение с сайта [Перезвонить]';
+
+$message = '
+    <html>
+    <head>
+        <title>Сообщение с сайта</title>
+    </head>
+    <body>
+        <h1>'.$name.'</h1> 
+        <p>просит перезвонить по номеру: <a href="tel:'.$tel.'">'.$tel.'</a></p>
+    </body>
+    </html> 
+';
+
+echo $message;
+//mail($to, $subject, $message, $headers);
+?>
