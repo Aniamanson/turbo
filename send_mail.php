@@ -27,7 +27,14 @@ if($name && $tel){
         "message" => $message,
         "errmsg" => false
     ];
-    echo json_encode($response);
+
     //mail($to, $subject, $message, $headers);
 }
+else {
+    $response = [
+        "message" => "ошибка",
+        "errmsg" => true
+    ];
+}
+echo json_encode($response);
 ?>

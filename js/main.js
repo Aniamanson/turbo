@@ -46,9 +46,11 @@ window.sendMail = function(){
     success: function(e){ 
       var resp = JSON.parse(e);
       if(!resp.errmsg){
-        console.log(resp.message) 
+        $(".errmsg").hide()
+        //console.log(resp.message) 
       } 
       else {
+        $(".errmsg").show()
         console.log("ошибка")
       }
     },
