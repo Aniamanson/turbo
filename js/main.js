@@ -36,7 +36,7 @@ $(document).ready(function () {
       $("div.mobile").attr("class","mobile collapse");
     }
   }
-
+var arr = {"apple":2,"banana":30};
 window.sendMail = function(ch){
   if(ch === "up"){
     var data = { "name": $("#name").val(), "tel":$("#tel").val() };
